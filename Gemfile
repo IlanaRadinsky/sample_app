@@ -1,13 +1,7 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
-
 gem 'rails',                   '5.0.1'
-gem 'bcrypt',                  '3.1.11', platforms: :ruby
+gem 'bcrypt',                  '3.1.11'
 gem 'faker',                   '1.6.6'
 gem 'carrierwave',             '0.11.2'
 gem 'mini_magick',             '4.5.1'
@@ -22,7 +16,6 @@ gem 'coffee-rails',            '4.2.1'
 gem 'jquery-rails',            '4.1.1'
 gem 'turbolinks',              '5.0.1'
 gem 'jbuilder',                '2.4.1'
-gem 'coffee-script-source',    '1.8.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'
